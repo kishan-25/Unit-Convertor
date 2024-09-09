@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Based Unit Convertor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Unit Converter</h1>
+        <label for="measure">Measure:</label>
+        <select id="measure">
+            <option value="">Select Measure</option>
+        </select>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" placeholder="Enter quantity" required>
+        <label for="sourceUnit">Source Unit:</label>
+        <select id="sourceUnit"></select>
+        <label for="targetUnit">Target Unit:</label>
+        <select id="targetUnit"></select>
+
+        <button onclick="convertUnits()">Convert</button>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
